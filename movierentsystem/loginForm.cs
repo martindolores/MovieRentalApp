@@ -60,8 +60,9 @@ namespace loginForm
             
             //connect to SQL database here
             connectionString = "data source = #####; database = ######; integrated security = True";
-
-            sql = "select* from loginTable where username = @username and pass = @pass";
+            
+            //insert table name
+            sql = "select* from ##### where username = @username and pass = @pass";
 
             using(SqlConnection connect = new SqlConnection(connectionString))
             {
@@ -107,8 +108,9 @@ namespace loginForm
             
             //connect to SQL database here
             connectionString = "data source = ####; database = ####; integrated security = True";
-
-            sql = "insert into loginTable (username, pass) values (@username, @pass)";
+            
+             //insert table name
+            sql = "insert into #### (username, pass) values (@username, @pass)";
 
             using(SqlConnection connect = new SqlConnection(connectionString))
             {
