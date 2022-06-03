@@ -57,8 +57,9 @@ namespace loginForm
         {
             string connectionString = null;
             string sql = null;
-
-            connectionString = "data source = DESKTOP-3BH4BKK; database = MovieRentalApp; integrated security = True";
+            
+            //connect to SQL database here
+            connectionString = "data source = #####; database = ######; integrated security = True";
 
             sql = "select* from loginTable where username = @username and pass = @pass";
 
@@ -103,8 +104,9 @@ namespace loginForm
         {
             string connectionString = null;
             string sql = null;
-
-            connectionString = "data source = DESKTOP-3BH4BKK; database = MovieRentalApp; integrated security = True";
+            
+            //connect to SQL database here
+            connectionString = "data source = ####; database = ####; integrated security = True";
 
             sql = "insert into loginTable (username, pass) values (@username, @pass)";
 
