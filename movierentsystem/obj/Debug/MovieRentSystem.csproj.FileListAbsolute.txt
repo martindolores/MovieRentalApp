@@ -1,0 +1,9 @@
+C:\Projects\MovieRentalApp\loginForm\bin\Debug\loginForm.exe.config
+C:\Projects\MovieRentalApp\loginForm\bin\Debug\loginForm.exe
+C:\Projects\MovieRentalApp\loginForm\bin\Debug\loginForm.pdb
+C:\Projects\MovieRentalApp\loginForm\obj\Debug\loginForm.loginForm.resources
+C:\Projects\MovieRentalApp\loginForm\obj\Debug\loginForm.Properties.Resources.resources
+C:\Projects\MovieRentalApp\loginForm\obj\Debug\MovieRentSystem.csproj.GenerateResource.cache
+C:\Projects\MovieRentalApp\loginForm\obj\Debug\MovieRentSystem.csproj.CoreCompileInputs.cache
+C:\Projects\MovieRentalApp\loginForm\obj\Debug\loginForm.exe
+C:\Projects\MovieRentalApp\loginForm\obj\Debug\loginForm.pdb
