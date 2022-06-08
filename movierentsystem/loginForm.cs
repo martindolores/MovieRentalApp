@@ -14,10 +14,12 @@ namespace loginForm
 {
     public partial class loginForm : Form
     {
+        const string CONNECTION_STRING = "data source = DESKTOP-3BH4BKK; database = MovieRentalApp; integrated security = True";
         public loginForm()
         {
             InitializeComponent();
         }
+
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -35,12 +37,16 @@ namespace loginForm
 
         private void textboxPassword_MouseClick(object sender, MouseEventArgs e)
         {
+           
             if (textboxPassword.Text == "Password")
             {
-                textboxPassword.Clear();
-                textboxPassword.PasswordChar = '*';
+                 textboxPassword.Clear();
             }
             
+        }
+        private void textboxPassword_TextChanged(object sender, EventArgs e)
+        {
+            textboxPassword.PasswordChar = '*';
         }
 
         private void pictureboxGitHub_Click(object sender, EventArgs e)
@@ -55,14 +61,11 @@ namespace loginForm
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string connectionString = null;
             string sql = null;
-
-            connectionString = "data source = DESKTOP-3BH4BKK; database = MovieRentalApp; integrated security = True";
 
             sql = "select* from loginTable where username = @username and pass = @pass";
 
-            using(SqlConnection connect = new SqlConnection(connectionString))
+            using(SqlConnection connect = new SqlConnection(CONNECTION_STRING))
             {
                 try
                 {
@@ -101,14 +104,11 @@ namespace loginForm
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            string connectionString = null;
+
             string sql = null;
-
-            connectionString = "data source = DESKTOP-3BH4BKK; database = MovieRentalApp; integrated security = True";
-
             sql = "insert into loginTable (username, pass) values (@username, @pass)";
 
-            using(SqlConnection connect = new SqlConnection(connectionString))
+            using(SqlConnection connect = new SqlConnection(CONNECTION_STRING))
             {
                 try
                 {
@@ -132,5 +132,6 @@ namespace loginForm
                 }
             }
         }
+
     }
 }

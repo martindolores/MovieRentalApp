@@ -104,6 +104,7 @@ namespace loginForm
             this.textboxPassword.TabIndex = 4;
             this.textboxPassword.Text = "Password";
             this.textboxPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textboxPassword_MouseClick);
+            this.textboxPassword.TextChanged += new System.EventHandler(this.textboxPassword_TextChanged);
             // 
             // panel1
             // 
