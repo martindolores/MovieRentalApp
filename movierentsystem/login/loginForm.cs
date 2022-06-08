@@ -62,17 +62,16 @@ namespace loginForm
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string sql = null;
-<<<<<<< HEAD
+
 
             sql = "select* from loginTable where username = @username and pass = @pass";
-=======
+
             
-            //connect to SQL database here
-            connectionString = "data source = #####; database = ######; integrated security = True";
+            
             
             //insert table name
-            sql = "select* from ##### where username = @username and pass = @pass";
->>>>>>> 1c878d32fe0342c21c1a1a0db6df8e6646ef8318
+            sql = "select* from loginTable where username = @username and pass = @pass";
+
 
             using(SqlConnection connect = new SqlConnection(CONNECTION_STRING))
             {
@@ -115,16 +114,15 @@ namespace loginForm
         {
 
             string sql = null;
-<<<<<<< HEAD
+
             sql = "insert into loginTable (username, pass) values (@username, @pass)";
-=======
+
             
-            //connect to SQL database here
-            connectionString = "data source = ####; database = ####; integrated security = True";
+            
             
              //insert table name
-            sql = "insert into #### (username, pass) values (@username, @pass)";
->>>>>>> 1c878d32fe0342c21c1a1a0db6df8e6646ef8318
+            sql = "insert into loginTable (username, pass) values (@username, @pass)";
+
 
             using(SqlConnection connect = new SqlConnection(CONNECTION_STRING))
             {

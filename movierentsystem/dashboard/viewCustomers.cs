@@ -57,6 +57,7 @@ namespace loginForm
             txtcSub.Clear();
             txtcState.Clear();
             txtcPost.Clear();
+            txtcMemberNo.Clear();
         }
 
         //Events-------------------------------------------------------------------

@@ -46,78 +46,78 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addCustomer.cs">
+    <Compile Include="dashboard\addCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addCustomer.Designer.cs">
+    <Compile Include="dashboard\addCustomer.Designer.cs">
       <DependentUpon>addCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="addMovie.cs">
+    <Compile Include="dashboard\addMovie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addMovie.Designer.cs">
+    <Compile Include="dashboard\addMovie.Designer.cs">
       <DependentUpon>addMovie.cs</DependentUpon>
     </Compile>
-    <Compile Include="dashboard.cs">
+    <Compile Include="dashboard\dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dashboard.Designer.cs">
+    <Compile Include="dashboard\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="IssuedReturnedMovies.cs">
+    <Compile Include="dashboard\IssuedReturnedMovies.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IssuedReturnedMovies.Designer.cs">
+    <Compile Include="dashboard\IssuedReturnedMovies.Designer.cs">
       <DependentUpon>IssuedReturnedMovies.cs</DependentUpon>
     </Compile>
-    <Compile Include="issueMovie.cs">
+    <Compile Include="dashboard\issueMovie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="issueMovie.Designer.cs">
+    <Compile Include="dashboard\issueMovie.Designer.cs">
       <DependentUpon>issueMovie.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginForm.cs">
+    <Compile Include="login\loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginForm.Designer.cs">
+    <Compile Include="login\loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="returnMovies.cs">
+    <Compile Include="dashboard\returnMovies.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="returnMovies.Designer.cs">
+    <Compile Include="dashboard\returnMovies.Designer.cs">
       <DependentUpon>returnMovies.cs</DependentUpon>
     </Compile>
-    <Compile Include="viewCustomers.cs">
+    <Compile Include="dashboard\viewCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="viewCustomers.Designer.cs">
+    <Compile Include="dashboard\viewCustomers.Designer.cs">
       <DependentUpon>viewCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="viewMovie.cs">
+    <Compile Include="dashboard\viewMovie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="viewMovie.Designer.cs">
+    <Compile Include="dashboard\viewMovie.Designer.cs">
       <DependentUpon>viewMovie.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="addCustomer.resx">
+    <EmbeddedResource Include="dashboard\addCustomer.resx">
       <DependentUpon>addCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addMovie.resx">
+    <EmbeddedResource Include="dashboard\addMovie.resx">
       <DependentUpon>addMovie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dashboard.resx">
+    <EmbeddedResource Include="dashboard\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IssuedReturnedMovies.resx">
+    <EmbeddedResource Include="dashboard\IssuedReturnedMovies.resx">
       <DependentUpon>IssuedReturnedMovies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="issueMovie.resx">
+    <EmbeddedResource Include="dashboard\issueMovie.resx">
       <DependentUpon>issueMovie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginForm.resx">
+    <EmbeddedResource Include="login\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -129,13 +129,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="returnMovies.resx">
+    <EmbeddedResource Include="dashboard\returnMovies.resx">
       <DependentUpon>returnMovies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="viewCustomers.resx">
+    <EmbeddedResource Include="dashboard\viewCustomers.resx">
       <DependentUpon>viewCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="viewMovie.resx">
+    <EmbeddedResource Include="dashboard\viewMovie.resx">
       <DependentUpon>viewMovie.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
