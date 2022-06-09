@@ -13,6 +13,9 @@ namespace loginForm
 {
     public partial class addMovie : Form
     {
+
+        const string CONNECTION_STRING = "data source = DESKTOP-3BH4BKK; database = MovieRentalApp; integrated security = True";
+
         public addMovie()
         {
             InitializeComponent();
@@ -47,14 +50,13 @@ namespace loginForm
                     Int64 mQuan = Int64.Parse(txtQuan.Text);
 
                  
-                    string connectionString = null;
+                    
                     string sql = null;
 
-                    connectionString = "data source = DESKTOP-3BH4BKK; database = MovieRentalApp; integrated security = True";
-
+                    
                     sql = "insert into newMovie values (@mName, @mRating, @mGenres, @mDirectors,@mPrice, @mPurDate, @mQuan)";
 
-                    using (SqlConnection connect = new SqlConnection(connectionString))
+                    using (SqlConnection connect = new SqlConnection(CONNECTION_STRING))
                     {
                         try
                         {
