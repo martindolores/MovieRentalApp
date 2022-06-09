@@ -14,48 +14,85 @@ NOTE: the names must be the same and the columns names as well.
 SQL Script
 
 Table 1:
+
 create table loginTable(
+
 id int NOT NULL IDENTITY (1,1) primary key,
+
 username varchar(150) not null,
+
 pass varchar(150) not null
+
 )
 
 Table 2:
+
 create table newMovie(
+
 mid int NOT NULL IDENTITY (1,1) primary key,
+
 mName varchar(250) not null,
+
 mRating varchar(250) not null,
+
 mGenres varchar(250) not null,
+
 mDirectors varchar(250) not null,
+
 mPrice bigint not null,
+
 mPurDate varchar(250) not null,
+
 mQuan varchar(250) not null
+
 )
 
 Table 3:
+
 create table CustomerDetails(
+
 custid int NOT NULL IDENTITY(1,1) primary key,
+
 custfname varchar(250) not null,
+
 custlname varchar(250) not null,
+
 custemail varchar(250) not null,
+
 custdate varchar(250) not null,
+
 custaddr varchar(250) not null,
+
 custsub varchar(250) not null,
+
 custstate varchar(250) not null,
+
 custpost varchar(250) not null,
+
 custmemberno varchar(250) not null
+
 )
 
 Table 4:
+
 create table issueMovie(
+
 id int NOT NULL IDENTITY (1,1) primary key,
+
 cust_memberNo varchar(250) not null,
+
 cust_Fname varchar(250) not null,
+
 cust_Lname varchar(250) not null,
+
 cust_Email varchar(250) not null,
+
 issue_mName varchar(250) not null,
+
 issue_Date varchar(250) not null,
+
 issue_returnDate varchar(250) not null
+
 )
 
 ----------------------------------------------------------
